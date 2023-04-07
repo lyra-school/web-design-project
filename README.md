@@ -1,2 +1,2 @@
 # web-design-project
-Web Design Fundamentals project, 2023
+Project for the Web Design Fundamentals class, 2023
