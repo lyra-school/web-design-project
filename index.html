@@ -2,13 +2,33 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <meta name="description" content="">
-        <meta name="keywords" content="">
-        <meta name="author" content="">
+        <meta name="description" content="Home page for Garden Birds of Ireland">
+        <meta name="keywords" content="Garden Birds of Ireland,birds,garden,chaffinch,wagtail,bullfinch">
+        <meta name="author" content="anonymous">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
         <title>Home | Garden Birds of Ireland</title>
         <link rel="stylesheet" type="text/css" href="style/mainstyle.css">
         <link rel="icon" type="image/png" href="favicon/favicontest.png">
         <style>
+            #articlegrid {
+                display:grid;
+                grid-column: auto;
+                grid-row: auto;
+                grid-template-areas:
+                    "a a a"
+                    "b b b"
+                    "c d e"
+                    "f f f";
+            }
+            #title {
+                grid-area: a;
+            }
+            #text {
+                grid-area: b;
+            }
+            article p {
+                text-align: center;
+            }
         </style>
     </head>
     <body>
@@ -18,11 +38,41 @@
         </header>
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
+                <li class="current">Home</li>
+                <li><a href="blog.html">Blog</a></li>
                 <li><a href="location.html">Sighting Locations</a></li>
                 <li><a href="contact.html">Contact</a></li>
-                <li><a href="blog.html">Blog</a></li>
             </ul>
         </nav>
+        <section id="mainflex">
+            <section id="asideflex">
+                <aside>
+                    <p style="padding-left: 10px;padding-top: 0px;">Browse</p>
+                    <ul>
+                        <li><a href="blog.html">2023</a></li>
+                    </ul>
+                </aside>
+                <p style="color:gray;">This is a college project completed as part of an assignment.</p>
+            </section>
+            <div id="gap"></div>
+            <article style="flex:1;" id="articlegrid">
+                <h2 id="title">Home</h2>
+                <p id="text">
+                    Blog dedicated to the wonderful world of birds and where to find them.<br><br>
+
+                </p>
+                <img class="imagesbasic" style="grid-area:c;" src="image/chaffinch.jpg" alt="common chaffinch">
+                <img class="imagesbasic" style="grid-area:d;" src="image/wagtail.jpg" alt="pied wagtail">
+                <img class="imagesbasic" style="grid-area:e;width:99%;" src="image/bullfinch.jpg" alt="bullfinch">
+                <table style="grid-area:f;">
+                    <tbody>
+                        <tr><td><i>Common Chaffinch</i></td><td><i>Pied Wagtail</i></td><td><i>Bullfinch</i></td></tr>
+                    </tbody>
+                </table>
+            </article>
+        </section>
+        <footer id="footer">
+            Copyright &copy; 2023
+        </footer>
     </body>
 </html>

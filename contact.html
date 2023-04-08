@@ -9,6 +9,22 @@
         <link rel="stylesheet" type="text/css" href="style/mainstyle.css">
         <link rel="icon" type="image/png" href="favicon/favicontest.png">
         <style>
+            body {
+                background-image: url('image/sparrowchaffinch.jpg');
+            }
+            article {
+                margin:20px;
+            }
+            #footer {
+                float:none;
+                padding:15px;
+                margin-left: 0;
+                margin-right: 0;
+                background-color: beige;
+                border-top: 2px solid #ffc29c;
+                color:gray;
+                text-align: center;
+            }
         </style>
     </head>
     <body>
@@ -19,10 +35,39 @@
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="location.html">Sighting Locations</a></li>
-                <li><a href="contact.html">Contact</a></li>
                 <li><a href="blog.html">Blog</a></li>
+                <li><a href="location.html">Sighting Locations</a></li>
+                <li class="current">Contact</li>
             </ul>
         </nav>
+        <article>
+            <form action="http://foo.com" method="get">
+                <label for="fist_name"><span class="required">*</span>First name:&nbsp;</label>
+                <input type="text" name="first_name" autofocus required placeholder="first name"><br><br>
+                <label for="last_name"><span class="required">*</span>Last name:&nbsp;</label>
+                <input type="text" name="last_name" required placeholder="last name"><br><br>
+                <label for="email"><span class="required">*</span>E-mail:&nbsp;</label>
+                <input type="email" name="email" required placeholder="example@domain.com"><br><br>
+                <label for="gender">Gender:&nbsp;</label>
+                <input type="radio" name="gender" value="male">Male
+                <input type="radio" name="gender" value="female">Female
+                <input type="radio" name="gender" value="other" checked>Other/prefer not to say<br><br>
+                <label for="advert">How have you heard of us?</label><br>
+                <fieldset>
+                    <input type="checkbox" name="advert" value="search" checked>Search engine<br><br>
+                    <input type="checkbox" name="advert" value="friend">Friends<br><br>
+                    <input type="checkbox" name="advert" value="advertisement">Advertisements<br><br>
+                    <input type="checkbox" name="advert" value="socmedia">Social media<br><br>
+                    <input type="checkbox" name="advert" value="none">None of the above<br><br>
+                </fieldset><br>
+                <label for="message">Your message:</label><br>
+                <textarea cols="100" rows="6" name="message" placeholder="Your message must be less than 512 characters." data-maxlength="512"></textarea><br><br>
+                <input type="submit" name="submit" class="button" value="Submit">
+                <input type="reset" name="reset" class="button">
+            </form>
+        </article>
+        <footer id="footer">
+            Copyright &copy; 2023
+        </footer>
     </body>
 </html>

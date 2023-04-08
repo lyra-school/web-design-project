@@ -2,13 +2,36 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <meta name="description" content="">
-        <meta name="keywords" content="">
-        <meta name="author" content="">
+        <meta name="description" content="Blog on house sparrows">
+        <meta name="keywords" content="house sparrow,sparrow,population,nests,ireland,birds,garden">
+        <meta name="author" content="anonymous">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
         <title>Blog | Garden Birds of Ireland</title>
         <link rel="stylesheet" type="text/css" href="style/mainstyle.css">
         <link rel="icon" type="image/png" href="favicon/favicontest.png">
         <style>
+            #articlegrid {
+                display:grid;
+                grid-column: auto;
+                grid-row: auto;
+                grid-template-areas:
+                    "a a a"
+                    "b b c"
+                    "d e e"
+                    "f f f";
+            }
+            #title {
+                grid-area:a;
+            }
+            #parone {
+                grid-area:b;
+            }
+            #partwo {
+                grid-area:e;
+            }
+            article p {
+                font-size: 0.9em;
+            }
         </style>
     </head>
     <body>
@@ -19,10 +42,51 @@
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
+                <li class="current">Blog</li>
                 <li><a href="location.html">Sighting Locations</a></li>
                 <li><a href="contact.html">Contact</a></li>
-                <li><a href="blog.html">Blog</a></li>
             </ul>
         </nav>
+        <section id="mainflex">
+            <section id="asideflex">
+                <aside>
+                    <p style="padding-left: 10px;padding-top: 0px;">Browse</p>
+                    <ul>
+                        <li><span style="color:#ffc29c">2023</span></li>
+                    </ul>
+                </aside>
+                <p style="color:gray;">This is a college project completed as part of an assignment.</p>
+            </section>
+            <div id="gap"></div>
+            <article style="flex:1;" id="articlegrid">
+                <h2 id="title">House Sparrow</h2>
+                <p id="parone">
+                    <a href="#footer">Jump to bottom</a><br><br>
+                    Sturdy relative of the finches, with large head and bill. Dark brown upperparts with heavy dark streaking, grey underparts. Male has chocolate brown nape, grey crown and large black bib. Female plainer with a buff stripe extending back from eye. Active and noisy around farms, urban areas, parks and gardens. Hops along ground, frequently flicking tail. Sometimes in large flocks, though numbers have declined in recent years.
+                </p>
+                <img class="imagesbasic" style="grid-area:c;width:98%;" src="image/sparrowone.jpg" alt="sparrows">
+                <video height="200" style="grid-area:d;padding-right: 20px;padding-bottom: 20px;" controls muted>
+                    <source src="video/sparrowsinging.mp4" type="video/mp4">
+                    Your browser does not support embedded videos.
+                </video>
+                <p id="partwo">
+                    Breeds throughout Ireland - mainly around farm buildings and built-up areas. Nests in cavity in building, especially under eaves or holes formed by missing brickwork. Will use nestboxes. Has declined in recent years - in some areas this may be due to lack of nest sites.<br><br>
+                    <a href="https://loremipsum.io/generator">Lorem ipsum generator used</a><br><br>
+                    <a href="https://www.statista.com/chart/26309/house-sparrow-population-eu/">Source for statistics</a><br><br>
+                    <a href="https://birdwatchireland.ie/birds/house-sparrow/">Source of placeholder text (birdwatchireland.ie)</a>
+                </p>
+                <table style="grid-area:f;">
+                    <thead>
+                        <tr><th>Bird</th><th>1982 Population (EU)</th><th>2017 Population (EU)</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>House Sparrow</td><td>508.6m</td><td>261.3m</td></tr>
+                    </tbody>
+                </table>
+            </article>
+        </section>
+        <footer id="footer">
+            Copyright &copy; 2023
+        </footer>
     </body>
 </html>

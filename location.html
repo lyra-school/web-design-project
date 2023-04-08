@@ -2,13 +2,35 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <meta name="description" content="">
-        <meta name="keywords" content="">
-        <meta name="author" content="">
-        <title>Location | Garden Birds of Ireland</title>
+        <meta name="description" content="Blog on Doorly Park, Sligo and birds within">
+        <meta name="keywords" content="doorly park,sligo,birds,ireland,garden,park,nature,mallard,blackbird,swan,robin,thrush">
+        <meta name="author" content="anonymous">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>Sighting Locations | Garden Birds of Ireland</title>
         <link rel="stylesheet" type="text/css" href="style/mainstyle.css">
         <link rel="icon" type="image/png" href="favicon/favicontest.png">
         <style>
+            #articlegrid {
+                display:grid;
+                grid-column: auto;
+                grid-row: auto;
+                grid-template-areas:
+                    "a a a"
+                    "b b c"
+                    "d e e";
+            }
+            #title {
+                grid-area:a;
+            }
+            #parone {
+                grid-area:b;
+            }
+            #partwo {
+                grid-area:e;
+            }
+            article p {
+                font-size: 0.9em;
+            }
         </style>
     </head>
     <body>
@@ -19,10 +41,42 @@
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="location.html">Sighting Locations</a></li>
-                <li><a href="contact.html">Contact</a></li>
                 <li><a href="blog.html">Blog</a></li>
+                <li class="current">Sighting Locations</li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
+        <section id="mainflex">
+            <section id="asideflex">
+                <aside>
+                    <p style="padding-left: 10px;padding-top: 0px;">Browse</p>
+                    <ul>
+                        <li><a href="blog.html">2023</a></li>
+                    </ul>
+                </aside>
+                <p style="color:gray;">This is a college project completed as part of an assignment.</p>
+            </section>
+            <div id="gap"></div>
+            <article style="flex:1;" id="articlegrid">
+                <h2 id="title">Doorly Park</h2>
+                <p id="parone">
+                    Doorly Park is located along the riverside in Sligo town, about 10 minute walk from the town centre. In the 19th century Colonel W G Woodmartin of Cleveragh developed this wetland on his estate. A series of ponds were excavated and drier areas were planted with oak, scots pine and a number of other species of tree. There is a nature trail through the park and a picnic area.<br><br>
+                    It also hosts many personable birds of various species.<br><br>
+                    <a href="https://sligotourism.ie/listing/doorly-park/">Source of placeholder text (sligotourism.ie)</a>
+                </p>
+                <img class="imagesbasic" style="grid-area:c;width:98%;" src="image/songthrush.jpg" alt="song thrush">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2329.979838374905!2d-8.45910292420453!3d54.26893420529606!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x485ee9b32fcbd2ef%3A0x2e0b0af0e4c56077!2sDoorly%20Park%2C%20Cleaveragh%20Demesne%2C%20Sligo!5e0!3m2!1sen!2sie!4v1680896906374!5m2!1sen!2sie" width="400" height="300" style="border:0;grid-area:d;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <ol style="grid-area:e;">
+                    <li>Eurasian blackbird</li><br>
+                    <li>European robin</li><br>
+                    <li>Song thrush</li><br>
+                    <li>Mallard</li><br>
+                    <li>Swan</li><br>
+                </ol>
+            </article>
+        </section>
+        <footer id="footer">
+            Copyright &copy; 2023
+        </footer>
     </body>
 </html>
