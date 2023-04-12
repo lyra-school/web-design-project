@@ -166,3 +166,9 @@ textarea {
     font-weight: bold;
     border:2px solid brown;
 }
+.button:hover {
+    cursor: pointer;
+}
+ol li {
+    margin-top:20px;
+}
