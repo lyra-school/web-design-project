@@ -79,6 +79,7 @@ article {
     padding-bottom: 10px;
 }
 #footer {
+    overflow:auto;
     float:none;
     padding:15px;
     margin-left:2.5%;
